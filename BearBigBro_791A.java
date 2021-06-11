@@ -3,13 +3,17 @@ import java.util.Set;
 import java.util.HashSet;
 
 
-public class FriendBanana_546A{
+public class BearBigBro_791A{
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
-    int k,n,w;
+    int k,n,count = 0;
     k = sc.nextInt();
     n = sc.nextInt();
-    w = sc.nextInt();
-    System.out.println(Math.max(((k * (w*(w+1)/2)) - n),0));
+    while(k<=n){
+      k*=3;
+      n*=2;
+      count++;
+    }
+    System.out.println(count);
   }
 }
